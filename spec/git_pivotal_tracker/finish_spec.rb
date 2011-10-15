@@ -3,10 +3,11 @@ require File.join(File.dirname(__FILE__), '..', 'spec_helper')
 describe GitPivotalTracker::Finish do
 
   before do
-    stub_request(:get, 'http://www.pivotaltracker.com/services/v3/projects/123').
+    stub_request(:get, %r!https?://www.pivotaltracker.com/services/v3/projects/123!).
         to_return :body => File.read("#{FIXTURES_PATH}/project.xml")
-    stub_request(:get, 'http://www.pivotaltracker.com/services/v3/projects/123/stories/1234567890').
+    stub_request(:get, %r!https?://www.pivotaltracker.com/services/v3/projects/123/stories/1234567890!).
         to_return :body => File.read("#{FIXTURES_PATH}/story.xml")
+
     @current_head = finish.repository.head
   end
 
@@ -34,7 +35,7 @@ describe GitPivotalTracker::Finish do
       finish.options[:integration_branch] = @current_head.name
 
       finish_xml = File.read("#{FIXTURES_PATH}/finish_story.xml")
-      stub_request(:put, 'http://www.pivotaltracker.com/services/v3/projects/123/stories/1234567890').
+      stub_request(:put, %r!https?://www.pivotaltracker.com/services/v3/projects/123/stories/1234567890!).
           with(:body => finish_xml).to_return(:body => finish_xml)
 
       @repo = finish.repository
