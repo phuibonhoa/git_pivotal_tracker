@@ -51,7 +51,7 @@ Requirements
 Install
 -------
 
-``gem install git_pivotal_tracker``
+``gem install git_pivotal_tracker_x``
 
 Once installed, git pivotal needs two bits of info: your Pivotal Tracker API Token and your Pivotal Tracker project id:
 
@@ -89,15 +89,12 @@ If you would like verbose logging turned on for git commands:
 
 ``git config --global pivotal.verbose 1``
 
-Author
-------
-
-* Ben Lindsey <ben@carbonfive.com>
 
 Contributors
 ------
-
-* [https://github.com/lyahdav](Liron Yahdav)
+* [Philippe Huibonhoa](https://github.com/phuibonhoa/)
+* [Ben Lindsey](https://github.com/blindsey)
+* [Liron Yahdav](https://github.com/lyahdav)
 
 License
 -------
