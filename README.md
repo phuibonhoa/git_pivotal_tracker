@@ -8,6 +8,7 @@ Changes included in this version:
 * Option to automatically delete story branches once they've been merged
 * Ability to pick your integration branch on the fly (when you start a new story)
 * Changed git hook from prepare-commit-msg to commit-msg since commit-msg is better supported by git apps
+  * I recommend [Brotherbard's GitX](https://github.com/downloads/phuibonhoa/git_pivotal_tracker/GitX.app.zip) (This is a slightly older version, because the newest one has performance issues for me).
 
 Features
 --------
