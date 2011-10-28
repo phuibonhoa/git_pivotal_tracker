@@ -1,4 +1,4 @@
-bookrenter\_git\_pivotal\_tracker
+git\_pivotal\_tracker_x
 ===========
 
 Forked from the awesome Git Pivotal Tracker gem by Ben Lindsey and Carbon Five.  (You can find the original [here](https://github.com/blindsey/git_pivotal_tracker))
