@@ -37,7 +37,7 @@ Gem::Specification.new do |s|
     "features/hooks/aruba.rb",
     "features/step_definitions/git_steps.rb",
     "features/support/env.rb",
-    "git_pivotal_tracker.gemspec",
+    "git_pivotal_tracker_x.gemspec",
     "lib/git_pivotal_tracker.rb",
     "lib/git_pivotal_tracker/base.rb",
     "lib/git_pivotal_tracker/finish.rb",
