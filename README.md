@@ -8,6 +8,7 @@ Changes included in this version:
 * Option to automatically delete story branches once they've been merged
 * Ability to pick your integration branch on the fly (when you start a new story)
 * Changed git hook from prepare-commit-msg to commit-msg since commit-msg is better supported by git apps
+  * I recommend [Brotherbard's GitX](https://github.com/downloads/phuibonhoa/git_pivotal_tracker/GitX.app.zip) (This is a slightly older version, because the newest one has performance issues for me).
 
 Features
 --------
@@ -50,7 +51,7 @@ Requirements
 Install
 -------
 
-``gem install git_pivotal_tracker``
+``gem install git_pivotal_tracker_x``
 
 Once installed, git pivotal needs two bits of info: your Pivotal Tracker API Token and your Pivotal Tracker project id:
 
@@ -88,15 +89,12 @@ If you would like verbose logging turned on for git commands:
 
 ``git config --global pivotal.verbose 1``
 
-Author
-------
-
-* Ben Lindsey <ben@carbonfive.com>
 
 Contributors
 ------
-
-* [https://github.com/lyahdav](Liron Yahdav)
+* [Philippe Huibonhoa](https://github.com/phuibonhoa/)
+* [Ben Lindsey](https://github.com/blindsey)
+* [Liron Yahdav](https://github.com/lyahdav)
 
 License
 -------
